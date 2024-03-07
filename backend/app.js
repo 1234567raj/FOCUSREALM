@@ -17,12 +17,17 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 
 
-var  corsOptions  = {
-     origin: process.env.FRONTEND_URL, //frontend url
-    credentials: true}
+// var  corsOptions  = {
+//     // origin: process.env.FRONTEND_URL, //frontend url
+//     credentials: true}
 
-app.use(cors(corsOptions));
-
+// app.use(cors());
+let corsOptions = {
+    credentials: true,
+  };
+  
+  app.options("*", cors(corsOptions));
+  app.use(cors(corsOptions));
 
 //Route imports
 const user=require("./routes/userRoute");

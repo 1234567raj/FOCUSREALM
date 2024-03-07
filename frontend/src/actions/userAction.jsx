@@ -31,7 +31,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const config = { headers: { 'Content-Type': 'application/json'} };
 
-    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/login`, { email, password }, {withCredentials:true},config);
+    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/login`, { email, password },config);
      
     dispatch({ type: LOGIN_SUCCESS, payload: data.user });
 
@@ -51,7 +51,7 @@ export const register = (userData) => async (dispatch) => {
 
     const config = { headers: { 'Content-Type': 'application/json'} };
 
-    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/register`, userData,{withCredentials:true}, config);
+    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/register`, userData, config);
 
   
 

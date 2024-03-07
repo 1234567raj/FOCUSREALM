@@ -3,7 +3,7 @@ import { supabase } from '..';
 import { scoreToTime } from '../../utils/scoreToTime';
 import { createUserData } from '../userdata';
 import { v4 as uuid } from 'uuid';
-import { colors } from '@material-ui/core';
+
 import React from 'react';
 export const checkUser = async ({ email, userId }) => {
     if (email) {

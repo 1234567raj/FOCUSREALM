@@ -16,7 +16,7 @@ export default function BlackJackButtons(props) {
         default:
           break;
       }
-    }
+    }d
     document.body.addEventListener("keydown", click, {
       passive: false
     });
