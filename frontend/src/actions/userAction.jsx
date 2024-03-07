@@ -31,7 +31,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const config = { headers: { 'Content-Type': 'application/json'} };
 
-    const { data } = await axios.post(`http://localhost:4002/api/v1/login`, { email, password }, {withCredentials:true},config);
+    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/login`, { email, password }, {withCredentials:true},config);
      
     dispatch({ type: LOGIN_SUCCESS, payload: data.user });
 
@@ -51,7 +51,7 @@ export const register = (userData) => async (dispatch) => {
 
     const config = { headers: { 'Content-Type': 'application/json'} };
 
-    const { data } = await axios.post(`http://localhost:4002/api/v1/register`, userData,{withCredentials:true}, config);
+    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/register`, userData,{withCredentials:true}, config);
 
   
 
@@ -70,7 +70,7 @@ export const register = (userData) => async (dispatch) => {
   try {
     dispatch({ type: LOAD_USER_REQUEST });
 
-    const { data } = await axios.get(`http://localhost:4002/api/v1/me`,{withCredentials:true});
+    const { data } = await axios.get(`https://focusrealm-1.onrender.com/api/v1/me`,{withCredentials:true});
 
     dispatch({ type: LOAD_USER_SUCCESS, payload: data.user});
 
@@ -88,7 +88,7 @@ export const clearErrors = () => async (dispatch) => {
 // Logout User
 export const logout = () => async (dispatch) => {
   try {
-    await axios.get(`http://localhost:4002/api/v1/logout`);
+    await axios.get(`https://focusrealm-1.onrender.com/api/v1/logout`);
 
     dispatch({ type: LOGOUT_SUCCESS });
   } catch (error) {
@@ -107,7 +107,7 @@ export const updatePassword = (passwords) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.put(
-      `http://localhost:4002/api/v1/password/update`,
+      `https://focusrealm-1.onrender.com/api/v1/password/update`,
       passwords,
       config
     );
@@ -128,7 +128,7 @@ export const forgotPassword = (email) => async (dispatch) => {
 
     const config = { headers: { "Content-Type": "application/json" } };
 
-    const { data } = await axios.post(`http://localhost:4002/api/v1/password/forgot`, email, config);
+    const { data } = await axios.post(`https://focusrealm-1.onrender.com/api/v1/password/forgot`, email, config);
 
     dispatch({ type: FORGOT_PASSWORD_SUCCESS, payload: data.message });
   } catch (error) {
@@ -147,7 +147,7 @@ export const resetPassword = (token, passwords) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.put(
-      `http://localhost:4002/api/v1/password/reset/${token}`,
+      `https://focusrealm-1.onrender.com/api/v1/password/reset/${token}`,
       passwords,
       config
     );
