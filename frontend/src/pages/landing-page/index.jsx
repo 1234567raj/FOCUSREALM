@@ -1,5 +1,5 @@
 import { useNavigate,Link } from "react-router-dom";
-import { FooterSection } from "../../components/footer";
+//import { FooterSection } from "../../components/footer";
 import OurHappyClient from "../../components/our-happy-client";
 import FAQ from "./faq/FAQ";
 import Sliding from "../../components/slider/Sliding";
@@ -16,13 +16,13 @@ const LandingPage = () => {
           <p>Focus Realm</p>
         </div>
         <div className="flex items-center gap-14 font-semibold">
-          <div>About</div>
-          <div>The Realm...</div>
-          <div>Goals</div>
+        <button className="bg-transparent" onClick={() => navigate("/about")}><div className="font-poppins cursor-pointer text-xl">About</div></button>
+          {/* <div>The Realm...</div>
+          <div>Goals</div> */}
           <div className="flex gap-3">
-            <button
+            {/* <button
               onClick={() => navigate("/as-individual")}
-              className="w-28 outline-1 outline outline-royalblue font-semibold text-xl py-4 px-5 rounded-3xl cursor-pointer">Login</button>
+              className="w-28 outline-1 outline outline-royalblue font-semibold text-xl py-4 px-5 rounded-3xl cursor-pointer">Login</button> */}
             <button
               onClick={() => navigate("/signup")}
               className="w-28 bg-royalblue py-4 text-white font-semibold text-xl rounded-3xl cursor-pointer">Signup</button>
@@ -69,7 +69,7 @@ const LandingPage = () => {
       {/* our happy client */}
       <OurHappyClient />
       {/* footer */}
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   );
 };

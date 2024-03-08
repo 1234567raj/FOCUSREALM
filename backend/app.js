@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 // app.use(cors());
 let corsOptions = {
     credentials: true,
+    //origin: process.env.FRONTEND_URL,
   };
   
   app.options("*", cors(corsOptions));

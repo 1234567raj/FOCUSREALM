@@ -8,7 +8,7 @@ const WelcomeContainer = ({ Children }) => {
     return (
       <div className=" flex items-center justify-center h-[100vh] overflow-hidden  bg-bgtest bg-cover bg-center">
         {/* <img src={testbg} alt="" className=" w-[100vw] overflow-clip" /> */}
-        <div className="absolute w-5/6 overflow-hidden lg:h-5/6 flex flex-col lg:flex-row top-20 lg:top-14 rounded-31xl bg-white shadow-[0px_4px_70px_rgba(1,_72,_183,_0.38)] box-border border-[1px] border-solid border-royalblue">
+        <div className="absolute w-5/6  lg:h-5/6  flex flex-col lg:flex-row top-20 lg:top-14 rounded-31xl bg-white shadow-[0px_4px_70px_rgba(1,_72,_183,_0.38)] box-border border-[1px] border-solid border-royalblue">
           <div className="w-full lg:w-1/2 h-full bg-white ">
             <div className="w-full pl-4 pt-4 flex absolute justify-between lg:justify-start">
               <img src={img} className="w-[112px] h-[112px]  " alt="" />
@@ -60,7 +60,7 @@ const WelcomeContainer = ({ Children }) => {
                 <div className="mt-4"> • Recommended Break Time: 10-15 minutes</div>
                 </div>
             </div>
-        <button onClick={() => navigate("/Questions1")} className="-ml-[94px] mt-[85px] cursor-pointer bg-[#01388D] rounded-3xl w-[210px] h-[68px] gap-[10px] text-[24px] items-center text-[#ffff]">Start Test</button>
+        <button onClick={() => navigate("/Questions1")} className="-ml-[94px] mt-[1.5rem] cursor-pointer bg-[#01388D] rounded-3xl w-[210px] h-[68px] gap-[10px] text-[24px] items-center text-[#ffff]">Start Test</button>
             {Children}
           </div>
         </div>

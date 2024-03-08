@@ -28,7 +28,7 @@ import Questions12 from "./components/Question/Questions12"
 import Questions13 from "./components/Question/Questions13"
 import Questions14 from "./components/Question/Questions14"
 import Questions15 from "./components/Question/Questions15"
-
+import About from "./components/About";
 // import {useNavigate} from "react-router-dom"
 import GameCard from "./components/games/GameCard/GameCard"
 import ForgotPassword from "./pages/signup/ForgotPassword"
@@ -100,7 +100,7 @@ const App = () => {
         {/* <Route index element={<Onboarding />} /> */}
         {/* <Route path="/as-individual" element={<AsIndividual />} /> */}
         
-        
+        <Route path="/about" element={<About/>} />
         <Route path="/dashboard" element={<ProfileDashboard />} />
         <Route path="/setting" element={<ProfileSetting />} />
         <Route path="/support" element={<ProfileSupport />} />
