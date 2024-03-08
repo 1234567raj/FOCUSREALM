@@ -66,7 +66,7 @@ const ProfileNotification = () => {
               />
               <div className="flex-auto"><Link to="/support"><div className="text-white text-decoration-line: none">Support</div></Link></div>
             </div>
-            <div className="flex gap-5  w-[83%] justify-between py-3 pr-12 pl-4 w-full rounded-xl border-2 border-blue-800 border-solid bg-white bg-opacity-0 mt-[946px] max-md:pr-5 max-md:mt-10">
+            <div className="flex gap-5 justify-between py-3 pr-12 pl-4 w-[83%] rounded-xl border-2 border-blue-800 border-solid bg-white bg-opacity-0 mt-[946px] max-md:pr-5 max-md:mt-10">
               <div className="flex gap-2 justify-between">
                 <img
                   loading="lazy"

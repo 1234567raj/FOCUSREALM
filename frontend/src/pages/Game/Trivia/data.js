@@ -4,6 +4,7 @@ export const data = [
             'Which planet is known as the Morning Star or the Evening Star?',
         right_option: 'Venus',
         wrong_options: ['Mars', 'Mercury', 'Jupiter'],
+        
         imageLink:
             'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Solar_System_size_to_scale.svg/512px-Solar_System_size_to_scale.svg.png',
     },

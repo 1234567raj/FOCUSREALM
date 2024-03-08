@@ -39,7 +39,7 @@ const ProfileDashboard = () => {
                 srcSet={logo1}
                 className="aspect-[1.32] w-[45px] mr-4"
               />
-              <div className="grow my-auto">Focus Realm</div>
+              <Link to="/Home"><div className="grow my-auto text-white text-decoration-line:none">Focus Realm</div></Link>
             </div>
             <div className="flex gap-4 justify-between px-16 py-5 mt-20 bg-blue-800 rounded-xl border-2 border-blue-800 border-solid shadow-sm max-md:px-5 max-md:mt-10">
               <img

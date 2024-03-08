@@ -59,7 +59,8 @@ const Trivia = () => {
                     <>
                         <div className={styles.game}>
                             <div className={styles.image}>
-                                <img src={image} alt='' />
+                                <img 
+                               loading='e' src={image} alt='' />
                             </div>
 
                             <div className={styles.question}>

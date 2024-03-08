@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
+import { Link } from "react-router-dom";
 function App() {
   const settings = {
     centerMode: true,
@@ -31,6 +32,7 @@ function App() {
   return (
     
     <div className="flex flex-col items-start py-120 pr-20 pb-200px max-w-full bg-gray-950 max-md:pr-5">
+      <Link to="/Home">
       <div className="flex gap-2.5 items-start mt-10 ml-16 max-md:ml-2.5">
         <img
           loading="lazy"
@@ -45,8 +47,9 @@ function App() {
         <div className="grow self-stretch my-auto text-5xl font-semibold text-center text-white max-md:text-4xl">
           Exercises
         </div>
+        
       </div>
-
+      </Link>
       {/* flex gap-5 justify-between w-full max-md:flex-wrap max-md:max-w-full */}
       <div className="w-full m-auto">
         <div className="mt-20  max-md:flex-wrap max-md:max-w-full ">

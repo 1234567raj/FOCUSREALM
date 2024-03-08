@@ -44,7 +44,7 @@ const ProfileSetting = () => {
                 srcSet={logo}
                 className="aspect-[1.32] w-[45px] mr-4"
               />
-              <div className="grow my-auto">Focus Realm</div>
+              <Link to="/Home"><div className="grow my-auto text-white text-decoration-line:none">Focus Realm</div></Link>
             </div>
             <div className="flex gap-4 justify-between px-16 py-5 mt-20 rounded-xl border-2 border-blue-800 border-solid shadow-sm max-md:px-5 max-md:mt-10">
               <img
@@ -70,7 +70,7 @@ const ProfileSetting = () => {
               />
               <Link to="/support"className="flex-auto"><div className="text-white text-decoration-line: none" >Support</div></Link>
             </div>
-            <div className="flex gap-5  w-[83%] justify-between py-3 pr-12 pl-4 w-full rounded-xl border-2 border-blue-800 border-solid bg-white bg-opacity-0 mt-[946px] max-md:pr-5 max-md:mt-10">
+            <div className="flex gap-5 justify-between py-3 pr-12 pl-4 w-[83%] rounded-xl border-2 border-blue-800 border-solid bg-white bg-opacity-0 mt-[946px] max-md:pr-5 max-md:mt-10">
               <div className="flex gap-2 justify-between">
                 <img
                   loading="lazy"

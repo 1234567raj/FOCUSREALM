@@ -40,14 +40,17 @@ export default function Navbar() {
                         <div
                             className="absolute h-full w-[102.22%] top-[0%] right-[-2.22%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border opacity-[0] border-[1px] border-solid border-deepskyblue-200">
                         </div>
-                        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] opacity-[0]">
+
+                        <Link to="/about">
+                        <div className="cursor-pointer absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] opacity-[0]">
                             <img className="absolute top-[0px] left-[0px] w-[73.37px] h-[55.43px] object-cover" alt=""
                                 src={img4} />
-
+                        
                             <div className="absolute top-[55.43px] left-[calc(50%_-_22.5px)] font-medium">
                                 About us
                             </div>
                         </div>
+                        </Link>
                         <img
                             className="absolute h-[73.91%] w-full top-[12%] right-[0%] bottom-[14.09%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                             alt="" src={img5} />
@@ -56,15 +59,19 @@ export default function Navbar() {
                         <div
                             className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border hidden border-[1px] border-solid border-deepskyblue-200">
                         </div>
-                        <Link to="/dashboard"><div
-                            className="absolute h-[86.67%] w-[66.67%] top-[6.67%] right-[17.33%] bottom-[6.67%] left-[16%] opacity-[0]">
+                        <Link to="/dashboard">
+                        <div
+                            className="cursor-pointer absolute h-[86.67%] w-[66.67%] top-[6.67%] right-[17.33%] bottom-[6.67%] left-[16%] opacity-[0]">
+                            
                          <img className="absolute top-[0px] left-[0px] w-[50px] h-[50px] object-cover" alt=""
                                 src={img6} />  
-
-                            <div className="absolut top-[50px] left-[10px] font-medium">
+                               
+                           
+                            <div className="absolut top-[50px] cursor-pointer left-[10px] font-medium">
                               Profile 
                             </div>
-                        </div></Link>
+                        </div>
+                        </Link>
                         <img
                             className="absolute h-[66.67%] w-[66.67%] top-[16.67%] right-[18%] bottom-[16.67%] left-[15.33%] max-w-full overflow-hidden max-h-full object-cover"
                             alt="" src={img7} />

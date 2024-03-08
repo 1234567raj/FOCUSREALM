@@ -53,7 +53,7 @@ import Sudoku from "./pages/Game/Sudoku/src/App";
 import GuessTheLogo from "./pages/Game/GuessTheLogo/GuessTheLogo";
 import AppExercise from "./pages/Profile/AppExcercise"
 import AppGame from "./pages/Profile/AppGames"
-
+import GameCardNew from "./pages/Games/GameCardNew";
 const App = () => {
    
  // const { user, isAuthenticate, isLoading } = useAuth0();
@@ -99,7 +99,7 @@ const App = () => {
       <Routes>
         {/* <Route index element={<Onboarding />} /> */}
         {/* <Route path="/as-individual" element={<AsIndividual />} /> */}
-        
+        <Route path="/games" element={<GameCardNew/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/dashboard" element={<ProfileDashboard />} />
         <Route path="/setting" element={<ProfileSetting />} />
@@ -191,7 +191,7 @@ const App = () => {
         
         } />
 
-        <Route path="/GameCard" element={<GameCard name={""} link={""} image={""} />} />
+        {/* <Route path="/GameCard" element={<GameCard name={""} link={""} image={""} />} /> */}
 
         <Route exact path="/password/forgot" element={<ForgotPassword />} />
         <Route
@@ -200,7 +200,7 @@ const App = () => {
           element={<ResetPassword />}
         />
 
-        <Route path="/GameCard" element={<GameCard name={""} link={""} image={""} />} />
+        {/* <Route path="/GameCard" element={<GameCard name={""} link={""} image={""} />} /> */}
 
 
         {/* <Route path="/test2" element={<MyComponent />} /> */}
